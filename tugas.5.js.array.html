@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column {
+            float: left;
+            width: 40%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .border-right {
+            border-right: 1px solid blue;
+        }
+        .type {
+            margin-top: -4px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="column border-right">
+        <label for=""><b>Create Tweet</b></label>
+        <br>
+        <textarea name="" id="yourTweet" cols="50" rows="20" placeholder="Tweet here!"></textarea>
+        <br>
+        <input type="submit" onclick="showTweet();"  value="submit">
+    </div>
+    <div class="column">
+        <p class="type"><b>Your Tweet</b></p>
+        <br>
+        <p class="type" id="show"></p>
+    </div>
+</div>
+    <script src="tugas.5.js.array.js"></script>
+</body>
+</html>
